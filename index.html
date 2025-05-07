@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ukrainian Kennel Union</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="top-bar">
+      <button class="menu-btn ripple-btn"><img src="icons/burger_icon.svg" alt="Menu icon"></button>
+      <div class="right-actions">
+        <button class="search-btn ripple-btn"><img src="icons/search_icon.svg" alt="Search icon"></button>
+        <div class="lang-select">
+          <img src="icons/language_icon.svg" alt="Change language icon"/>
+          <select>
+            <option>ENGLISH</option>
+            <option>Українська</option>
+          </select>
+        </div>
+        <button class="contacts-btn ripple-btn">OUR CONTACTS</button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero">
+        <div class="hero-left">
+          <h1>UKRAINIAN<br>KENNEL UNION</h1>
+        </div>
+        <div class="hero-logo">
+          <img src="img/fci_logo.svg" alt="FCI logo" />
+        </div>
+        <div class="hero-links">
+          <a href="#">ORDER A PEDIGREE ONLINE →</a>
+          <a href="#">MASS MEDIA ABOUT US →</a>
+          <a href="#">LOST AND FOUND →</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ВИНЕСЕНО ЗА .container -->
+  <section class="war-block">
+    <div class="war-images">
+      <img src="img/war1.jpg" alt="">
+      <img src="img/war2.jpg" alt="">
+      <img src="img/war3.jpg" alt="">
+    </div>
+
+    <div class="war-bottom">
+        <div class="war-container">
+          <div class="war-row">
+            <p class="war-text">
+              ON FEBRUARY 24, 2022, AT 5 A.M.,<br>
+              WITHOUT A DECLARATION OF WAR,<br>
+              FASCIST RUSSIA ATTACKED<br> UKRAINE.
+            </p>
+            <div class="war-btn-wrapper">
+              <button class="war-btn ripple-btn">STORIES OF WAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="ksu-intro">
+    <div class="ksu-images">
+      <img src="img/dog-show.jpg" alt="Dog show" data-aos="fade-up" data-aos-delay="0">
+      <div class="ksu-color-block" data-aos="fade-up" data-aos-delay="100"></div>
+      <img src="img/fci-ksu-bg.jpg" alt="FCI and KSU logos" data-aos="fade-up" data-aos-delay="200">
+    </div>
+  
+    <div class="ksu-content">
+      <div class="ksu-left" data-aos="fade-up" data-aos-delay="300">
+        <h2>WE BRING PEOPLE AND DOGS<br>TOGETHER WITH LOVE AND<br>PROFESSIONALISM /</h2>
+      </div>
+  
+      <div class="ksu-right">
+        <div class="ksu-box" data-aos="fade-up" data-aos-delay="400">
+          <p>KSU is an official national organization uniting cynologists, breeders, dog owners and animal lovers throughout Ukraine.</p>
+        </div>
+        <div class="ksu-box" data-aos="fade-up" data-aos-delay="500">
+          <p>We are the only representative of the FCI (International Cynological Federation) in Ukraine, which guarantees international recognition of the documents and achievements of our members.</p>
+        </div>
+      </div>
+  
+      <div class="ksu-arrow" data-aos="zoom-in" data-aos-delay="600">
+        <img src="icons/arrow-down.svg" alt="Scroll down">
+      </div>
+    </div>
+  </section>
+
+  <section class="ksu-team">
+    <div class="ksu-team-top">
+      <h2>
+        Stay with us to be part of a<br>
+        community where every dog is a<br>
+        champion in their own heart.
+      </h2>
+      <div class="ksu-star"></div>
+    </div>
+  
+    <div class="ksu-team-bottom">
+      <div class="ksu-team-left">
+        <img src="img/fci-logo.svg" alt="FCI logo" class="team-logo" />
+        <p>We work to ensure high standards of breeding work,<br>
+          protection of animal rights, and development of cynology in Ukraine.
+        </p>
+        <button class="team-btn ripple-btn">OUR TEAM</button>
+      </div>
+      <div class="ksu-team-right">
+        <img src="img/ksu-team-photo.jpg" alt="KSU Team photo" />
+      </div>
+    </div>
+  </section>
+  
+  <footer class="ksu-footer">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <a href="#">Home</a>
+        <a href="#">Structure</a>
+        <a href="#">Official</a>
+        <a href="#">Documents</a>
+      </div>
+      <div class="footer-column">
+        <a href="#">Dog Show</a>
+        <a href="#">Judges</a>
+        <a href="#">Titles</a>
+      </div>
+      <div class="footer-column">
+        <a href="#">Tribal Work</a>
+        <a href="#">Sport And Working Qualities</a>
+        <a href="#">Veterinary Medicine</a>
+      </div>
+      <div class="footer-column">
+        <a href="#">Cynological Courses</a>
+        <a href="#">News About Us</a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="footer-socials">
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+      </div>
+      <div class="footer-center">Ukrainian Kennel Union</div>
+      <div class="footer-right">©2025 All Rights Reserved</div>
+    </div>
+  </footer>
+  
+  
+  
+  
+
+  <script>
+    document.querySelectorAll('.ripple-btn').forEach(button => {
+      button.addEventListener('click', function (e) {
+        const ripple = document.createElement('span');
+        const diameter = Math.max(button.clientWidth, button.clientHeight);
+        const radius = diameter / 2;
+
+        ripple.style.width = ripple.style.height = `${diameter}px`;
+        ripple.style.left = `${e.clientX - button.getBoundingClientRect().left - radius}px`;
+        ripple.style.top = `${e.clientY - button.getBoundingClientRect().top - radius}px`;
+        ripple.classList.add('ripple-circle');
+
+        const existing = button.querySelector('.ripple-circle');
+        if (existing) existing.remove();
+
+        button.appendChild(ripple);
+      });
+    });
+  </script>
+  <script>
+    const warObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+    }
+  });
+}, { threshold: 0.3 });
+
+warObserver.observe(document.querySelector('.war-images'));
+warObserver.observe(document.querySelector('.war-row'));
+
+  </script>
+  
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+  
+  <script>
+    const teamSection = document.querySelector('.ksu-team');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      teamSection.classList.add('visible');
+    }
+  });
+}, { threshold: 0.3 });
+
+observer.observe(teamSection);
+
+  </script>
+  
+  
+  
+  
+</body>
+</html>
